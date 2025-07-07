@@ -16,7 +16,7 @@ def render():
                 items = projects[category]
                 for project in items:
                     st.markdown(f"### {project['title']}")
-                    st.write(project['description'])
+                    st.markdown(f"- {project['description']}")
                     if project.get("link"):
                         st.link_button('🔗 View Project', url=project['link'])
                     st.markdown("---")
