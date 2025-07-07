@@ -5,7 +5,7 @@ from PIL import Image
 
 # Load assets
 def render():
-    profile_pic = Image.open("assets/profile_pic.jpg")
+    profile_pic = Image.open("assets/profile_img.jpg")
     resume_file = "assets/resume.pdf"
 
     # Custom CSS
@@ -15,16 +15,16 @@ def render():
     # Header
     col1, col2 = st.columns([1, 3])
     with col1:
-        st.image(profile_pic, width=200, caption="<img> Victor Zion </img>")
+        st.image(profile_pic, width=260, caption="<img> Victor Zion </img>")
     with col2:
-        st.title("👋🏽Hi! I'm Victor Zion")
-        st.subheader("AI Engineer || Python Engineer || Technical Researcher")
+        st.title("👋🏽Hi! I'm :blue[Victor] Zion")
+        st.subheader("AI Engineer | Python Developer | Technical Researcher")
         st.write("""
             - 🔬 Building RAG systems, AI assistants, and backend infrastructures.
             - 🧠 Passionate about teaching technical writing and prompt engineering.
             - 📚 Writing API/SDK docs, research reports, and technical documentations.
         """)
-        st.download_button("📄 Download Resume", resume_file, file_name="Victor_Zion_Resume.pdf")
+        st.download_button("Download Resume", resume_file, file_name="Victor_Zion_Resume.pdf", icon="📄")
 
     st.divider()
     st.markdown("## 🛠️ Tech Stack")
@@ -58,4 +58,4 @@ def render():
     st.write("- 🌐 Surfing the net.")
     st.write("- 🧘🏽‍♂️ Spending time alone.")
     st.divider()
-    st.markdown("👉 Use the sidebar to explore my projects, blog posts, and contact info.")
+    st.markdown("👉 Use the sidebar for navigation.")
