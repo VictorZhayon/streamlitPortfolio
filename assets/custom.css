@@ -1,0 +1,46 @@
+body{
+    background-color: #f9f9fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3{
+    color: #003262;
+}
+
+.stButton > button {
+    background-color: #0072CE;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5em 1.2em;
+}
+
+.stDownloadButton > button {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5em 1.2em;
+}
+
+.stTextInput > div > input,
+.stTextArea > div > textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 1em 0;
+}
+
+.stLinkButton > button {
+    background-color: #004080;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.5em 1.2em;
+}
