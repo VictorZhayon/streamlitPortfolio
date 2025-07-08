@@ -19,6 +19,8 @@ def render():
                     st.markdown(f"- {project['description']}")
                     if project.get("link"):
                         st.link_button('🔗 View Project', url=project['link'])
+                    if project.get("github"):
+                        st.link_button('📚 View on GitHub', url=project['github'])
                     st.markdown("---")
     else:
         st.info("No projects found.")
