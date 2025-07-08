@@ -1,14 +1,17 @@
-### utils/email_handler.py
 import smtplib
 from email.message import EmailMessage
-# from python_dotenv import dotenv
+import os
+from dotenv import load_dotenv
 
-# load_env()
+load_dotenv()
 
 def send_email(name, sender_email, message):
     try:
-        EMAIL_ADDRESS = "victorzion1@gmail.com"
-        EMAIL_PASSWORD = "softwareyahoo"
+        EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+        EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+
+        if not EMAIL_ADDRESS or not EMAIL_PASSWORD:
+            raise ValueError("Email credentials not found in environment variables.")
 
         msg = EmailMessage()
         msg["Subject"] = "New Contact from Portfolio"
