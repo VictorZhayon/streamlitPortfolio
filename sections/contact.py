@@ -14,7 +14,7 @@ def render():
     with col3:
         st.link_button('👨🏿‍💼LinkedIn', url='https://linkedin.com/in/victor-zion', type= "tertiary")
     with col4:
-        st.link_button('📞WhatsApp', url='https://wa.com/+2348105123142', type= "tertiary")
+        st.link_button('📞WhatsApp', url='https://wa.link/xge0dd', type= "tertiary")
 
     with st.form("contact_form", border= False):
         name = st.text_input("Your Name", placeholder= "John Doe")
