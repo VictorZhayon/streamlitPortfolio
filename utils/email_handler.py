@@ -2,6 +2,7 @@ import smtplib
 from email.message import EmailMessage
 import os
 from dotenv import load_dotenv
+import traceback  # Add this for detailed error output
 
 load_dotenv()
 
@@ -26,4 +27,5 @@ def send_email(name, sender_email, message):
         return True
     except Exception as e:
         print(f"Error sending email: {e}")
+        traceback.print_exc()  # Print full traceback for debugging
         return False
