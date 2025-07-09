@@ -1,4 +1,3 @@
-### pages/3_Contact.py
 import streamlit as st
 from utils.email_handler import send_email
 
