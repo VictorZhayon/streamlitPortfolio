@@ -43,7 +43,7 @@ StreamlitPortfolio/
 │     load_projects.py     # Loads project data
 │     email_handler.py     # Handles contact form email
 │
-└── __pycache__/           # Python cache files
+└── README.md              # README.md file
 ```
 
 ---
