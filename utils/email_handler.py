@@ -14,7 +14,7 @@ def send_email(name, sender_email, message):
             raise ValueError("Email credentials not found in environment variables.")
 
         msg = EmailMessage()
-        msg["Subject"] = "New Contact from Portfolio"
+        msg["Subject"] = "New Contact from Portfolio Site"
         msg["From"] = EMAIL_ADDRESS
         msg["To"] = EMAIL_ADDRESS
         msg.set_content(f"From: {name} <{sender_email}>\n\n{message}")
