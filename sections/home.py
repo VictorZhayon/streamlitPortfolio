@@ -5,7 +5,7 @@ from PIL import Image
 
 # Load assets
 def render():
-    profile_pic = Image.open("Victor.png")
+    profile_pic = Image.open("assets/pic.png")
     resume_file = "assets/resume.pdf"
 
     # Custom CSS
