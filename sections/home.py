@@ -5,7 +5,7 @@ from PIL import Image
 
 # Load assets
 def render():
-    profile_pic = Image.open("assets/ChatGPT Image Jul 21, 2025, 12_56_54 AM.png")
+    profile_pic = Image.open("assets/Victor.png")
     resume_file = "assets/resume.pdf"
 
     # Custom CSS
